@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Simple Website Showcase - DealRevive.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background, consistent with main site */
+            color: #333;
+        }
+        .gradient-button {
+            background-image: linear-gradient(to right, #2563EB 0%, #3B82F6 100%);
+            transition: all 0.3s ease;
+            background-size: 200% auto;
+        }
+        .gradient-button:hover {
+            background-position: right center;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .calendly-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .website-card {
+            @apply bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105;
+        }
+        .website-card img {
+            @apply w-full h-48 object-cover; /* Adjust height as needed */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="rounded-md p-1 hover:bg-gray-50 transition-colors">
+                <img src="logo.png" alt="Deal Revive Logo" class="h-16 w-auto">
+            </a>
+            <a href="index.html" class="bg-blue-700 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition duration-300">Back to DealRevive.com</a>
+        </div>
+    </nav>
+
+    <header class="py-16 md:py-24 bg-blue-600 text-white text-center shadow-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
+                Simple, Effective Websites for Growing Businesses
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                A strong online presence doesn't have to break the bank.<u> No Monthly Fees (unless you want advanced features)!</u> You are in full control.
+                See examples of the professional, affordable websites we can build for you.
+            </p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Our Sample Websites</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <a href="https://dealrevive.github.io/pet-groomer-sample/" target="_blank" rel="noopener noreferrer" class="website-card">
+                <img src="petlogo.png" alt="Sample Website 1 Thumbnail">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Pet Groomer Business Site</h3>
+                    <p class="text-gray-600">A clean, responsive design perfect for local pet groomers, contractors, consultants, or service providers. Focuses on clear calls-to-action and client testimonials.</p>
+                    <span class="inline-block mt-4 text-blue-700 hover:text-blue-900 font-medium">View Website &rarr;</span>
+                </div>
+            </a>
+
+            <a href="https://jcdchimney.com" target="_blank" rel="noopener noreferrer" class="website-card">
+                <img src="chimneylogo.jpg" alt="Sample Website  for tradesman, cheap and low-cost price">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Trademan Services Business (HVAC, Chimney, Electric, Maid, Plumbing, etc. </h3>
+                    <p class="text-gray-600">Ideal for showcasing your trade business</p>
+                    <span class="inline-block mt-4 text-blue-700 hover:text-blue-900 font-medium">View Website &rarr;</span>
+                </div>
+            </a>
+
+            <a href="https://dealrevive.com/" target="_blank" rel="noopener noreferrer" class="website-card">
+                <img src="logo.png" alt="Sample Website 3 Thumbnail">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Professional Business Website</h3>
+                    <p class="text-gray-600">Perfect for professional businesses: Sales, Tax Prep, Tutors, Insurance, Consulting </p>
+                    <span class="inline-block mt-4 text-blue-700 hover:text-blue-900 font-medium">View Website &rarr;</span>
+                </div>
+            </a>
+
+        </div>
+
+        <section class="py-16 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Ready for Your Own Professional Website?</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-700">
+                Let's discuss your vision. Book a free, no-obligation consultation to talk about your website needs and how we can get you online quickly and affordably.
+            </p>
+            <div class="calendly-container">
+                <div class="calendly-inline-widget" data-url="https://calendly.com/dealrevive" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-0">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Ultra Modern Services LLC DBA Deal Revive. All rights reserved. Jacksonville, Florida</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="privatepolicy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
